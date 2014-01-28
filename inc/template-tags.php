@@ -1,17 +1,17 @@
 <?php
 /**
- * Custom template tags for Twenty Fourteen
+ * Custom template tags for Devpress
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  */
 
 if ( ! function_exists( 'devpress_paging_nav' ) ) :
 /**
  * Display navigation to next/previous set of posts when applicable.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
  */
@@ -66,7 +66,7 @@ if ( ! function_exists( 'devpress_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
  */
@@ -101,7 +101,7 @@ if ( ! function_exists( 'devpress_posted_on' ) ) :
 /**
  * Print HTML with meta information for the current post-date/time and author.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
  */
@@ -124,7 +124,7 @@ endif;
 /**
  * Find out if blog has more than one category.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return boolean true if blog has more than 1 category
  */
@@ -153,7 +153,7 @@ function devpress_categorized_blog() {
 /**
  * Flush out the transients used in devpress_categorized_blog.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
  */
@@ -170,7 +170,7 @@ add_action( 'save_post',     'devpress_category_transient_flusher' );
  * Wraps the post thumbnail in an anchor element on index
  * views, or a div element when on single views.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
 */

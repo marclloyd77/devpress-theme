@@ -8,7 +8,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  */
 
 get_header(); ?>

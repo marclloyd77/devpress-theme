@@ -8,7 +8,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  */
 
 class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
@@ -17,7 +17,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 * The supported post formats.
 	 *
 	 * @access private
-	 * @since Twenty Fourteen 1.0
+	 * @since Devpress 1.0
 	 *
 	 * @var array
 	 */
@@ -27,7 +27,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 * Pluralized post format strings.
 	 *
 	 * @access private
-	 * @since Twenty Fourteen 1.0
+	 * @since Devpress 1.0
 	 *
 	 * @var array
 	 */
@@ -36,12 +36,12 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	/**
 	 * Constructor.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Devpress 1.0
 	 *
 	 * @return Twenty_Fourteen_Ephemera_Widget
 	 */
 	public function __construct() {
-		parent::__construct( 'widget_devpress_ephemera', __( 'Twenty Fourteen Ephemera', 'devpress' ), array(
+		parent::__construct( 'widget_devpress_ephemera', __( 'Devpress Ephemera', 'devpress' ), array(
 			'classname'   => 'widget_devpress_ephemera',
 			'description' => __( 'Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts', 'devpress' ),
 		) );
@@ -64,7 +64,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 * Output the HTML for this widget.
 	 *
 	 * @access public
-	 * @since Twenty Fourteen 1.0
+	 * @since Devpress 1.0
 	 *
 	 * @param array $args     An array of standard parameters for widgets in this theme.
 	 * @param array $instance An array of settings for this widget instance.
@@ -204,7 +204,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 *
 	 * Here is where any validation should happen.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Devpress 1.0
 	 *
 	 * @param array $new_instance New widget instance.
 	 * @param array $instance     Original widget instance.
@@ -223,7 +223,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	/**
 	 * Display the form for this widget on the Widgets page of the Admin area.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Devpress 1.0
 	 *
 	 * @param array $instance
 	 * @return void

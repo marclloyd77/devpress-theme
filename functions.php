@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Fourteen functions and definitions
+ * Devpress functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -22,7 +22,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  */
 
 /**
@@ -30,14 +30,14 @@
  *
  * @see devpress_content_width()
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 474;
 }
 
 /**
- * Twenty Fourteen only works in WordPress 3.6 or later.
+ * Devpress only works in WordPress 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -45,7 +45,7 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) ) {
 
 if ( ! function_exists( 'devpress_setup' ) ) :
 /**
- * Twenty Fourteen setup.
+ * Devpress setup.
  *
  * Set up theme defaults and registers support for various WordPress features.
  *
@@ -53,15 +53,15 @@ if ( ! function_exists( 'devpress_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support post thumbnails.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  */
 function devpress_setup() {
 
 	/*
-	 * Make Twenty Fourteen available for translation.
+	 * Make Devpress available for translation.
 	 *
 	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on Twenty Fourteen, use a find and
+	 * If you're building a theme based on Devpress, use a find and
 	 * replace to change 'devpress' to the name of your theme in all
 	 * template files.
 	 */
@@ -113,7 +113,7 @@ add_action( 'after_setup_theme', 'devpress_setup' );
 /**
  * Adjust content_width value for image attachment template.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
  */
@@ -185,16 +185,16 @@ if ( ! function_exists( 'devpress_the_attached_image' ) ) :
 /**
  * Print the attached image with a link to the next attached image.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
  */
 function devpress_the_attached_image() {
 	$post                = get_post();
 	/**
-	 * Filter the default Twenty Fourteen attachment size.
+	 * Filter the default Devpress attachment size.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Devpress 1.0
 	 *
 	 * @param array $dimensions {
 	 *     An array of height and width dimensions.
@@ -254,7 +254,7 @@ if ( ! function_exists( 'devpress_list_authors' ) ) :
 /**
  * Print a list of all site contributors who published at least one post.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @return void
  */
@@ -299,7 +299,7 @@ endif;
  * Create a nicely formatted and more specific title element text for output
  * in head of document, based on current view.
  *
- * @since Twenty Fourteen 1.0
+ * @since Devpress 1.0
  *
  * @param string $title Default title text for current view.
  * @param string $sep Optional separator.
